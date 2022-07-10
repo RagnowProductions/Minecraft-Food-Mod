@@ -1,0 +1,140 @@
+{
+  "minecraft:item" : {
+    "events" : {
+      "cc:on_use" : {
+
+      },
+      "cc:on_consume" : {
+        "sequence" : [
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "slowness"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "blindness"
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "speed",
+              "amplifier" : 5,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "jump_boost",
+              "amplifier" : 17,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "absorption",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "night_vision",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "resistance",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "health_boost",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "haste",
+              "amplifier" : 99,
+              "target" : "holder",
+              "duration" : 30
+            }
+          }
+        ]
+      }
+    },
+    "components" : {
+      "minecraft:use_duration" : 2,
+      "minecraft:max_stack_size" : 1,
+      "minecraft:food" : {
+        "using_converts_to" : "minecraft:glass_bottle",
+        "can_always_eat" : true,
+        "nutrition" : 4,
+        "saturation_modifier" : "good",
+        "on_consume" : {
+          "event" : "cc:on_consume",
+          "target" : "self"
+        }
+      },
+      "minecraft:hand_equipped" : false,
+      "minecraft:foil" : true,
+      "minecraft:icon" : {
+        "texture" : "cc:coffee"
+      },
+      "minecraft:render_offsets" : {
+        "main_hand" : {
+          "third_person" : {
+            "scale" : [
+              0.10000000000000001,
+              0.10000000000000001,
+              0.10000000000000001
+            ]
+          },
+          "first_person" : {
+            "scale" : [
+              0.037999999999999999,
+              0.037999999999999999,
+              0.037999999999999999
+            ]
+          }
+        },
+        "off_hand" : {
+          "third_person" : {
+            "scale" : [
+              0.10000000000000001,
+              0.10000000000000001,
+              0.10000000000000001
+            ]
+          },
+          "first_person" : {
+            "scale" : [
+              0.037999999999999999,
+              0.037999999999999999,
+              0.037999999999999999
+            ]
+          }
+        }
+      },
+      "minecraft:use_animation" : "drink"
+    },
+    "description" : {
+      "category" : "items",
+      "identifier" : "cc:coffee"
+    }
+  },
+  "format_version" : "1.16.100"
+}
