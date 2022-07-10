@@ -1,0 +1,72 @@
+{
+  "minecraft:item" : {
+    "events" : {
+      "cc:on_use" : {
+
+      },
+      "cc:on_consume" : {
+        "sequence" : [
+
+        ]
+      }
+    },
+    "components" : {
+      "minecraft:use_duration" : 2,
+      "minecraft:max_stack_size" : 16,
+      "minecraft:food" : {
+        "can_always_eat" : false,
+        "nutrition" : 4,
+        "saturation_modifier" : "normal",
+        "on_consume" : {
+          "event" : "cc:on_consume",
+          "target" : "self"
+        }
+      },
+      "minecraft:hand_equipped" : false,
+      "minecraft:foil" : false,
+      "minecraft:icon" : {
+        "texture" : "cc:bacon"
+      },
+      "minecraft:render_offsets" : {
+        "main_hand" : {
+          "third_person" : {
+            "scale" : [
+              0.10000000000000001,
+              0.10000000000000001,
+              0.10000000000000001
+            ]
+          },
+          "first_person" : {
+            "scale" : [
+              0.037999999999999999,
+              0.037999999999999999,
+              0.037999999999999999
+            ]
+          }
+        },
+        "off_hand" : {
+          "third_person" : {
+            "scale" : [
+              0.10000000000000001,
+              0.10000000000000001,
+              0.10000000000000001
+            ]
+          },
+          "first_person" : {
+            "scale" : [
+              0.037999999999999999,
+              0.037999999999999999,
+              0.037999999999999999
+            ]
+          }
+        }
+      },
+      "minecraft:use_animation" : "eat"
+    },
+    "description" : {
+      "category" : "items",
+      "identifier" : "cc:bacon"
+    }
+  },
+  "format_version" : "1.16.100"
+}

@@ -1,0 +1,31 @@
+{
+  "minecraft:recipe_shaped" : {
+    "result" : {
+      "count" : 1,
+      "data" : 0,
+      "item" : "cc:hamburger"
+    },
+    "tags" : [
+      "crafting_table"
+    ],
+    "key" : {
+      "A" : {
+        "data" : 0,
+        "item" : "minecraft:bread"
+      },
+      "B" : {
+        "data" : 0,
+        "item" : "minecraft:cooked_beef"
+      }
+    },
+    "pattern" : [
+      " A ",
+      " B ",
+      " A "
+    ],
+    "description" : {
+      "identifier" : "cc:hamburger_F79D74BE-9CAD-45DB-ADEB-03FA1A20A818"
+    }
+  },
+  "format_version" : "1.10"
+}

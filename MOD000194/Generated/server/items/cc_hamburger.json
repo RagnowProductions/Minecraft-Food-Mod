@@ -1,0 +1,103 @@
+{
+  "minecraft:item" : {
+    "events" : {
+      "cc:on_use" : {
+
+      },
+      "cc:on_consume" : {
+        "sequence" : [
+          {
+            "add_mob_effect" : {
+              "effect" : "hunger",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "regeneration",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "absorption",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "slowness",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          }
+        ]
+      }
+    },
+    "components" : {
+      "minecraft:use_duration" : 2,
+      "minecraft:max_stack_size" : 16,
+      "minecraft:food" : {
+        "can_always_eat" : false,
+        "nutrition" : 4,
+        "saturation_modifier" : "low",
+        "on_consume" : {
+          "event" : "cc:on_consume",
+          "target" : "self"
+        }
+      },
+      "minecraft:hand_equipped" : false,
+      "minecraft:foil" : true,
+      "minecraft:icon" : {
+        "texture" : "cc:hamburger"
+      },
+      "minecraft:render_offsets" : {
+        "main_hand" : {
+          "third_person" : {
+            "scale" : [
+              0.012500000000000001,
+              0.012500000000000001,
+              0.012500000000000001
+            ]
+          },
+          "first_person" : {
+            "scale" : [
+              0.0047499999999999999,
+              0.0047499999999999999,
+              0.0047499999999999999
+            ]
+          }
+        },
+        "off_hand" : {
+          "third_person" : {
+            "scale" : [
+              0.012500000000000001,
+              0.012500000000000001,
+              0.012500000000000001
+            ]
+          },
+          "first_person" : {
+            "scale" : [
+              0.0047499999999999999,
+              0.0047499999999999999,
+              0.0047499999999999999
+            ]
+          }
+        }
+      },
+      "minecraft:use_animation" : "eat"
+    },
+    "description" : {
+      "category" : "items",
+      "identifier" : "cc:hamburger"
+    }
+  },
+  "format_version" : "1.16.100"
+}

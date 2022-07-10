@@ -1,0 +1,259 @@
+{
+  "minecraft:item" : {
+    "events" : {
+      "cc:on_use" : {
+
+      },
+      "cc:on_consume" : {
+        "sequence" : [
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "fire_resistance"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "water_breathing"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "invisibility"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "blindness"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "night_vision"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "hunger"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "weakness"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "poison"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "wither"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "speed"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "slowness"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "saturation"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "haste"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "levitation"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "mining_fatigue"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "fatal_poison"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "conduit_power"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "slow_falling"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "instant_damage"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "bad_omen"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "jump_boost"
+            }
+          },
+          {
+            "remove_mob_effect" : {
+              "target" : "holder",
+              "effect" : "nausea"
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "instant_health",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "absorption",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "resistance",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "health_boost",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "saturation",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "strength",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          },
+          {
+            "add_mob_effect" : {
+              "effect" : "regeneration",
+              "amplifier" : 1,
+              "target" : "holder",
+              "duration" : 30
+            }
+          }
+        ]
+      }
+    },
+    "components" : {
+      "minecraft:use_duration" : 2,
+      "minecraft:max_stack_size" : 16,
+      "minecraft:food" : {
+        "can_always_eat" : false,
+        "nutrition" : 14,
+        "saturation_modifier" : "normal",
+        "on_consume" : {
+          "event" : "cc:on_consume",
+          "target" : "self"
+        }
+      },
+      "minecraft:hand_equipped" : false,
+      "minecraft:foil" : false,
+      "minecraft:icon" : {
+        "texture" : "cc:banana"
+      },
+      "minecraft:render_offsets" : {
+        "main_hand" : {
+          "third_person" : {
+            "scale" : [
+              0.10000000000000001,
+              0.10000000000000001,
+              0.10000000000000001
+            ]
+          },
+          "first_person" : {
+            "scale" : [
+              0.037999999999999999,
+              0.037999999999999999,
+              0.037999999999999999
+            ]
+          }
+        },
+        "off_hand" : {
+          "third_person" : {
+            "scale" : [
+              0.10000000000000001,
+              0.10000000000000001,
+              0.10000000000000001
+            ]
+          },
+          "first_person" : {
+            "scale" : [
+              0.037999999999999999,
+              0.037999999999999999,
+              0.037999999999999999
+            ]
+          }
+        }
+      },
+      "minecraft:use_animation" : "eat"
+    },
+    "description" : {
+      "category" : "items",
+      "identifier" : "cc:banana"
+    }
+  },
+  "format_version" : "1.16.100"
+}

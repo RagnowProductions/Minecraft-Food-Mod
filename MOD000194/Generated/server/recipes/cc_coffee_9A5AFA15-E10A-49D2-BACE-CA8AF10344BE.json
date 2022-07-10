@@ -1,0 +1,35 @@
+{
+  "minecraft:recipe_shaped" : {
+    "result" : {
+      "count" : 1,
+      "data" : 0,
+      "item" : "cc:coffee"
+    },
+    "tags" : [
+      "crafting_table"
+    ],
+    "key" : {
+      "A" : {
+        "data" : 0,
+        "item" : "minecraft:dye"
+      },
+      "B" : {
+        "data" : 0,
+        "item" : "minecraft:potion"
+      },
+      "C" : {
+        "data" : 0,
+        "item" : "minecraft:sugar"
+      }
+    },
+    "pattern" : [
+      " A ",
+      " B ",
+      " C "
+    ],
+    "description" : {
+      "identifier" : "cc:coffee_9A5AFA15-E10A-49D2-BACE-CA8AF10344BE"
+    }
+  },
+  "format_version" : "1.10"
+}
